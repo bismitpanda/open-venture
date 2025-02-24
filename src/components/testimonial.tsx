@@ -1,14 +1,18 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import CarouselIndicator from "./carousel-indicator";
 
 export interface TestimonialProps {
   rating: number;
@@ -96,9 +100,20 @@ const TestimonialSection = () => {
     },
   ];
 
+  const [api, setApi] = useState<CarouselApi>();
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    if (api) {
+      api.on("scroll", () => {
+        setActiveSlide(api.selectedScrollSnap());
+      });
+    }
+  }, [api]);
+
   return (
-    <section className="py-16 px-4 mx-50 bg-blue-50">
-      <Carousel opts={{ loop: true }} className="w-full">
+    <section className="py-16 px-4 mx-50">
+      <Carousel opts={{ loop: true }} setApi={setApi} className="w-full">
         <CarouselContent>
           {testimonials.map((testimonial, index) => (
             <CarouselItem className="md:basis-1/2 lg:basis-1/4" key={index}>
@@ -111,6 +126,10 @@ const TestimonialSection = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <CarouselIndicator
+        totalSlides={testimonials.length}
+        activeSlide={activeSlide}
+      />
     </section>
   );
 };

@@ -6,6 +6,7 @@ import {
   CreditCard,
   Calculator,
   Building2,
+  ArrowDown,
 } from "lucide-react";
 import Navbar from "@/components/navbar";
 import TestimonialSection from "@/components/testimonial";
@@ -87,7 +88,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Navbar />
 
       <section className="text-center py-48 px-4">
@@ -100,7 +101,9 @@ export default function Page() {
         </p>
         <div className="flex justify-center gap-4">
           <Button variant="default">Talk to an Immigration Expert</Button>
-          <Button variant="outline">View Services</Button>
+          <Button variant="outline">
+            View Services <ArrowDown />
+          </Button>
         </div>
       </section>
 
