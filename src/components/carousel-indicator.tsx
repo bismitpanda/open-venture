@@ -25,7 +25,7 @@ const CarouselIndicator = ({
 
   return (
     <div className="w-full flex justify-center mt-8">
-      <div className="relative w-64 h-1 bg-gray-300 rounded-full overflow-hidden">
+      <div className="relative w-64 h-1 bg-blue-300 rounded-full overflow-hidden">
         <motion.div
           className="absolute h-4 -top-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
           initial={false}
@@ -41,7 +41,6 @@ const CarouselIndicator = ({
           }}
         />
 
-        {/* Static background indicators */}
         {Array.from({ length: totalSlides }).map((_, index) => (
           <div
             key={index}

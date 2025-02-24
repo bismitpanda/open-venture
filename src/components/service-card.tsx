@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { LucideIcon } from "lucide-react";
+import { Check, LucideIcon } from "lucide-react";
 
 export interface ServiceCardProps {
   icon: LucideIcon;
@@ -17,7 +17,7 @@ const ServiceCard = ({
   features,
 }: ServiceCardProps) => {
   return (
-    <Card className="p-6">
+    <Card className="p-6 border-none shadow-none">
       <div className="text-blue-600 mb-4">
         <Icon className="w-6 h-6" />
       </div>
@@ -26,7 +26,9 @@ const ServiceCard = ({
       <ul className="space-y-2">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
+            <span className="text-green-500 mr-2">
+              <Check />
+            </span>
             <span className="text-sm">{feature}</span>
           </li>
         ))}

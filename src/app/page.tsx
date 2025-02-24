@@ -14,13 +14,10 @@ import ServiceCard from "@/components/service-card";
 import { PartnerSection } from "@/components/partner-button";
 import Footer from "@/components/footer";
 import { AvatarStack } from "@/components/avatar-stack";
+import Link from "next/link";
 
 export default function Page() {
   const stats = [
-    {
-      number: "10,000+",
-      description: "Immigrants satisfied with our services since 2018.",
-    },
     { number: "2,000+", description: "Successfully secured Green Cards" },
     { number: "20%", description: "Savings on tax filing for our clients" },
     {
@@ -91,8 +88,8 @@ export default function Page() {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="text-center py-48 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <section className="text-center py-56 px-4">
+        <h1 className="text-5xl md:text-5xl font-bold mb-4">
           Your All-in-One Concierge for Life in the U.S.
         </h1>
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -101,13 +98,15 @@ export default function Page() {
         </p>
         <div className="flex justify-center gap-4">
           <Button variant="default">Talk to an Immigration Expert</Button>
-          <Button variant="outline">
-            View Services <ArrowDown />
-          </Button>
+          <Link href="#services">
+            <Button variant="outline">
+              View Services <ArrowDown />
+            </Button>
+          </Link>
         </div>
       </section>
 
-      <section className="bg-blue-50 py-16">
+      <section id="services" className="bg-blue-50 py-16">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-row max-w-fit mx-auto space-x-10">
             <span className="text-5xl font-bold bg-gradient-to-br from-[#1454A1] to-[#AC049B] text-transparent bg-clip-text">
@@ -150,7 +149,7 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-center mb-12">
           Assistance We Offer
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

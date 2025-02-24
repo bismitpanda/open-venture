@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   Carousel,
   CarouselApi,
@@ -13,15 +11,23 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import CarouselIndicator from "./carousel-indicator";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export interface TestimonialProps {
   rating: number;
   text: string;
   author: string;
   date: string;
+  avatarUrl: string;
 }
 
-const TestimonialCard = ({ rating, text, author, date }: TestimonialProps) => (
+const TestimonialCard = ({
+  rating,
+  text,
+  author,
+  date,
+  avatarUrl,
+}: TestimonialProps) => (
   <Card className="min-w-[300px] mx-4">
     <CardContent className="pt-6">
       <div className="flex mb-2">
@@ -33,6 +39,9 @@ const TestimonialCard = ({ rating, text, author, date }: TestimonialProps) => (
       </div>
       <p className="text-gray-600 mb-4">{text}</p>
       <div className="flex items-center">
+        <Avatar>
+          <AvatarImage src={avatarUrl} />
+        </Avatar>
         <div className="ml-3">
           <p className="font-medium">{author}</p>
           <p className="text-sm text-gray-500">{date}</p>
@@ -49,54 +58,63 @@ const TestimonialSection = () => {
       text: "Expert Guidance! Open Venture has been exceptionally professional and helpful...",
       author: "Michael K",
       date: "January 12, 2024",
+      avatarUrl: "/avatars/avatar-1.jpg",
     },
     {
       rating: 4,
       text: "Expert Guidance Every Step of the Way...",
       author: "Kevin T",
       date: "January 15, 2024",
+      avatarUrl: "/avatars/avatar-2.jpg",
     },
     {
       rating: 5,
       text: "Amazing Support! Their team has been incredible...",
       author: "Aaron S",
       date: "January 18, 2024",
+      avatarUrl: "/avatars/avatar-3.jpg",
     },
     {
       rating: 5,
       text: "Expert Guidance! Open Venture has been exceptionally professional and helpful...",
       author: "Michael K",
       date: "January 12, 2024",
+      avatarUrl: "/avatars/avatar-1.jpg",
     },
     {
       rating: 4,
       text: "Expert Guidance Every Step of the Way...",
       author: "Kevin T",
       date: "January 15, 2024",
+      avatarUrl: "/avatars/avatar-2.jpg",
     },
     {
       rating: 5,
       text: "Amazing Support! Their team has been incredible...",
       author: "Aaron S",
       date: "January 18, 2024",
+      avatarUrl: "/avatars/avatar-3.jpg",
     },
     {
       rating: 5,
       text: "Expert Guidance! Open Venture has been exceptionally professional and helpful...",
       author: "Michael K",
       date: "January 12, 2024",
+      avatarUrl: "/avatars/avatar-1.jpg",
     },
     {
       rating: 4,
       text: "Expert Guidance Every Step of the Way...",
       author: "Kevin T",
       date: "January 15, 2024",
+      avatarUrl: "/avatars/avatar-2.jpg",
     },
     {
       rating: 5,
       text: "Amazing Support! Their team has been incredible...",
       author: "Aaron S",
       date: "January 18, 2024",
+      avatarUrl: "/avatars/avatar-3.jpg",
     },
   ];
 
