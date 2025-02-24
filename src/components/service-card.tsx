@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check, LucideIcon } from "lucide-react";
+import { ArrowRight, Check, LucideIcon } from "lucide-react";
 
 export interface ServiceCardProps {
   icon: LucideIcon;
@@ -17,7 +17,7 @@ const ServiceCard = ({
   features,
 }: ServiceCardProps) => {
   return (
-    <Card className="p-6 border-none shadow-none">
+    <Card className="p-6">
       <div className="text-blue-600 mb-4">
         <Icon className="w-6 h-6" />
       </div>
@@ -34,7 +34,7 @@ const ServiceCard = ({
         ))}
       </ul>
       <Button variant="link" className="mt-4">
-        Know more
+        Know more <ArrowRight />
       </Button>
     </Card>
   );

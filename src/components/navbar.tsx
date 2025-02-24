@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center p-4 max-w-7xl mx-auto">
+    <header className="flex justify-between items-center mt-4 p-4 max-w-7xl mx-auto">
       <div className="flex items-center">
         <img src="/logo.svg" alt="Open Venture" className="h-8" />
       </div>
