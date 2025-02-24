@@ -1,101 +1,138 @@
-import Image from "next/image";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Home,
+  GraduationCap,
+  CreditCard,
+  Calculator,
+  Building2,
+} from "lucide-react";
+import Navbar from "@/components/navbar";
+import TestimonialSection from "@/components/testimonial";
+import ServiceCard from "@/components/service-card";
+import { PartnerSection } from "@/components/partner-button";
+import Footer from "@/components/footer";
 
-export default function Home() {
+export default function Page() {
+  const stats = [
+    {
+      number: "10,000+",
+      description: "Immigrants satisfied with our services since 2018.",
+    },
+    { number: "2,000+", description: "Successfully secured Green Cards" },
+    { number: "20%", description: "Savings on tax filing for our clients" },
+    {
+      number: "1,000+",
+      description: "Visa holders transitioned jobs without status slip",
+    },
+    { number: "Top 10", description: "Immigration law firms partner with us" },
+  ];
+
+  const services = [
+    {
+      icon: Home,
+      title: "Housing & Relocation",
+      description: "Navigate homeownership or rentals in the U.S.",
+      features: [
+        "Mortgage & financing for high-skilled professionals",
+        "Understanding lease agreements & home loans",
+        "Relocation support for job changes",
+      ],
+    },
+    {
+      icon: GraduationCap,
+      title: "Education & Publications",
+      description:
+        "Build your professional presence with strategic media placements and expert insights.",
+      features: [
+        "Personal branding through high-tier publications",
+        "Thought leadership to showcase your expertise",
+        "Strengthen your case for EB-1A & career growth",
+      ],
+    },
+    {
+      icon: CreditCard,
+      title: "Visas & Green Card",
+      description:
+        "For EB-1A, NIW & O-1 applicants. Let us handle your immigration journey.",
+      features: [
+        "EB-1A petition & documentation strategy",
+        "Letters of recommendation & case presentation",
+        "Spouse & dependent support",
+      ],
+    },
+    {
+      icon: Calculator,
+      title: "Tax Filing Made Simple",
+      description:
+        "Navigate U.S. taxes confidently with our expert guidance and support.",
+      features: [
+        "Avoid IRS penalties & double taxation",
+        "Tax filing for EB-1A & Green Cards",
+        "ITIN, Social Security, and investment tax guidance",
+      ],
+    },
+    {
+      icon: Building2,
+      title: "Incubator & Business Support",
+      description:
+        "Starting a business in the U.S.? We connect you to the right incubators, funding, and legal setup.",
+      features: [
+        "Business visa & LLC setup help",
+        "Startup incubator & networking access",
+        "Funding & investment opportunities",
+      ],
+    },
+  ];
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded-sm font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-white">
+      <Navbar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="text-center py-48 px-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Your All-in-One Concierge for Life in the U.S.
+        </h1>
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          From visas to housing, taxes, and business setup—we make your
+          transition seamless so you can focus on what matters.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button variant="default">Talk to an Immigration Expert</Button>
+          <Button variant="outline">View Services</Button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="bg-blue-50 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <div key={index}>
+                <div className="text-2xl font-bold text-blue-600">
+                  {stat.number}
+                </div>
+                <p className="text-sm text-gray-600">{stat.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <TestimonialSection />
+      </section>
+
+      <section className="py-16 max-w-7xl mx-auto px-4">
+        <h2 className="text-2xl font-bold text-center mb-12">
+          Assistance We Offer
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
+        </div>
+      </section>
+
+      <PartnerSection />
+      <Footer />
     </div>
   );
 }
