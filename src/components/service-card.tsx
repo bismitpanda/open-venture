@@ -10,12 +10,12 @@ export interface ServiceCardProps {
   features: string[];
 }
 
-const ServiceCard = ({
+export function ServiceCard({
   icon: Icon,
   title,
   description,
   features,
-}: ServiceCardProps) => {
+}: ServiceCardProps) {
   return (
     <Card className="p-6">
       <div className="text-blue-600 mb-4">
@@ -38,6 +38,4 @@ const ServiceCard = ({
       </Button>
     </Card>
   );
-};
-
-export default ServiceCard;
+}

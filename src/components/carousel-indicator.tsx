@@ -6,10 +6,10 @@ interface CarouselIndicatorProps {
   activeSlide: number;
 }
 
-const CarouselIndicator = ({
+export function CarouselIndicator({
   totalSlides,
   activeSlide,
-}: CarouselIndicatorProps) => {
+}: CarouselIndicatorProps) {
   const prevActiveRef = useRef(activeSlide);
   const directionRef = useRef<"forward" | "backward" | null>(null);
 
@@ -61,6 +61,4 @@ const CarouselIndicator = ({
       </div>
     </div>
   );
-};
-
-export default CarouselIndicator;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Instagram, Twitter, ChevronRight } from "lucide-react";
 
-const Footer = () => {
+export function Footer() {
   const socialLinks = [
     { label: "Twitter", icon: Twitter, href: "#" },
     { label: "Instagram", icon: Instagram, href: "#" },
@@ -42,6 +42,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

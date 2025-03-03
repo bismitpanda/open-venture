@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+export function Navbar() {
   const navItems = [
     { label: "Housing", href: "#" },
     { label: "Publishing", href: "#" },
@@ -29,6 +29,4 @@ const Navbar = () => {
       <Button>Get in Touch</Button>
     </header>
   );
-};
-
-export default Navbar;
+}

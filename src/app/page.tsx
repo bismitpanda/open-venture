@@ -1,20 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Home,
-  GraduationCap,
-  CreditCard,
-  Calculator,
-  Building2,
-  ArrowDown,
-} from "lucide-react";
-import Navbar from "@/components/navbar";
-import TestimonialSection from "@/components/testimonial";
-import ServiceCard from "@/components/service-card";
-import { PartnerSection } from "@/components/partner-button";
-import Footer from "@/components/footer";
+import { ArrowDown } from "lucide-react";
+import { Navbar } from "@/components/navbar";
+import { TestimonialSection } from "@/components/testimonial-section";
+import { PartnerSection } from "@/components/brands-section";
+import { Footer } from "@/components/footer";
 import { AvatarStack } from "@/components/avatar-stack";
 import Link from "next/link";
+import { ServiceSection } from "@/components/service-section";
 
 export default function Page() {
   const stats = [
@@ -25,63 +18,6 @@ export default function Page() {
       description: "Visa holders transitioned jobs without status slip",
     },
     { number: "Top 10", description: "Immigration law firms partner with us" },
-  ];
-
-  const services = [
-    {
-      icon: Home,
-      title: "Housing & Relocation",
-      description: "Navigate homeownership or rentals in the U.S.",
-      features: [
-        "Mortgage & financing for high-skilled professionals",
-        "Understanding lease agreements & home loans",
-        "Relocation support for job changes",
-      ],
-    },
-    {
-      icon: GraduationCap,
-      title: "Education & Publications",
-      description:
-        "Build your professional presence with strategic media placements and expert insights.",
-      features: [
-        "Personal branding through high-tier publications",
-        "Thought leadership to showcase your expertise",
-        "Strengthen your case for EB-1A & career growth",
-      ],
-    },
-    {
-      icon: CreditCard,
-      title: "Visas & Green Card",
-      description:
-        "For EB-1A, NIW & O-1 applicants. Let us handle your immigration journey.",
-      features: [
-        "EB-1A petition & documentation strategy",
-        "Letters of recommendation & case presentation",
-        "Spouse & dependent support",
-      ],
-    },
-    {
-      icon: Calculator,
-      title: "Tax Filing Made Simple",
-      description:
-        "Navigate U.S. taxes confidently with our expert guidance and support.",
-      features: [
-        "Avoid IRS penalties & double taxation",
-        "Tax filing for EB-1A & Green Cards",
-        "ITIN, Social Security, and investment tax guidance",
-      ],
-    },
-    {
-      icon: Building2,
-      title: "Incubator & Business Support",
-      description:
-        "Starting a business in the U.S.? We connect you to the right incubators, funding, and legal setup.",
-      features: [
-        "Business visa & LLC setup help",
-        "Startup incubator & networking access",
-        "Funding & investment opportunities",
-      ],
-    },
   ];
 
   return (
@@ -96,8 +32,10 @@ export default function Page() {
           From visas to housing, taxes, and business setup—we make your
           transition seamless so you can focus on what matters.
         </p>
-        <div className="flex justify-center gap-4">
-          <Button variant="default">Talk to an Immigration Expert</Button>
+        <div className="flex justify-center gap-4 sm:flex-row flex-col">
+          <Link href="">
+            <Button variant="default">Talk to an Immigration Expert</Button>
+          </Link>
           <Link href="#services">
             <Button variant="outline">
               View Services <ArrowDown />
@@ -145,18 +83,10 @@ export default function Page() {
         <TestimonialSection />
       </section>
 
-      <section className="py-16 max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12">
-          Assistance We Offer
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </div>
-      </section>
+      <ServiceSection />
 
       <PartnerSection />
+
       <Footer />
     </div>
   );
