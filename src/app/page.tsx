@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { TestimonialSection } from "@/components/testimonial-section";
 import { PartnerSection } from "@/components/brands-section";
@@ -34,7 +34,7 @@ export default function Page() {
         </p>
         <div className="flex justify-center gap-4 sm:flex-row flex-col">
           <Link href="">
-            <Button variant="default">Talk to an Immigration Expert</Button>
+            <Button variant="default">Book a free consultation</Button>
           </Link>
           <Link href="#services">
             <Button variant="outline">
@@ -68,7 +68,7 @@ export default function Page() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index}>
                 <div className="text-4xl font-bold text-blue-600">
@@ -86,6 +86,27 @@ export default function Page() {
       <ServiceSection />
 
       <PartnerSection />
+
+      <section id="cta">
+        <div className="rounded-xl bg-sky-50 py-10">
+          <div className="container relative mx-auto max-w-7xl px-4 py-16">
+            <div className="mx-auto space-y-4 pb-6 text-center">
+              <h2 className="font-mono text-sm font-medium uppercase tracking-wider text-primary">
+                Ready to get started?
+              </h2>
+              <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
+                Start Your US Visa Journey Now!
+              </h3>
+            </div>
+            <div className="mx-auto mt-6 flex w-full max-w-2xl flex-col items-center justify-center space-y-4 sm:mt-10 sm:flex-row sm:space-x-4 sm:space-y-0">
+              <Button className="group gap-1">
+                Get Started
+                <ArrowRight className="transform transition-transform duration-200 ease-in-out group-hover:translate-x-1" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>

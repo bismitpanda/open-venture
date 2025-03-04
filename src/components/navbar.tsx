@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const navItems = [
-    { label: "Housing", href: "#" },
-    { label: "Publishing", href: "#" },
-    { label: "Tax Filing", href: "#" },
     { label: "Visa Assistance", href: "#" },
+    { label: "Housing", href: "#" },
+    { label: "Tax Filing", href: "#" },
     { label: "Incubator", href: "#" },
+    { label: "Media Services", href: "#" },
   ];
 
   return (

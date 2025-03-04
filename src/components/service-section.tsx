@@ -10,27 +10,6 @@ import { ServiceCard } from "@/components/service-card";
 export function ServiceSection() {
   const services = [
     {
-      icon: Home,
-      title: "Housing & Relocation",
-      description: "Navigate homeownership or rentals in the U.S.",
-      features: [
-        "Mortgage & financing for high-skilled professionals",
-        "Understanding lease agreements & home loans",
-        "Relocation support for job changes",
-      ],
-    },
-    {
-      icon: GraduationCap,
-      title: "Education & Publications",
-      description:
-        "Build your professional presence with strategic media placements and expert insights.",
-      features: [
-        "Personal branding through high-tier publications",
-        "Thought leadership to showcase your expertise",
-        "Strengthen your case for EB-1A & career growth",
-      ],
-    },
-    {
       icon: CreditCard,
       title: "Visas & Green Card",
       description:
@@ -39,6 +18,16 @@ export function ServiceSection() {
         "EB-1A petition & documentation strategy",
         "Letters of recommendation & case presentation",
         "Spouse & dependent support",
+      ],
+    },
+    {
+      icon: Home,
+      title: "Housing & Relocation",
+      description: "Navigate homeownership or rentals in the U.S.",
+      features: [
+        "Mortgage & financing for high-skilled professionals",
+        "Understanding lease agreements & home loans",
+        "Relocation support for job changes",
       ],
     },
     {
@@ -61,6 +50,17 @@ export function ServiceSection() {
         "Business visa & LLC setup help",
         "Startup incubator & networking access",
         "Funding & investment opportunities",
+      ],
+    },
+    {
+      icon: GraduationCap,
+      title: "Media Services",
+      description:
+        "Build your professional presence with strategic media placements and expert insights.",
+      features: [
+        "Personal branding through high-tier publications",
+        "Thought leadership to showcase your expertise",
+        "Strengthen your case for EB-1A & career growth",
       ],
     },
   ];
