@@ -13,7 +13,7 @@ export function ServiceSection() {
       icon: CreditCard,
       title: "Visas & Green Card",
       description:
-        "For EB-1A, NIW & O-1 applicants. Let us handle your immigration journey.",
+        "Fast-Track Your EB-1A Green Card Process Leverage our expertise to navigate your EB-1A journey successfully.",
       features: [
         "EB-1A petition & documentation strategy",
         "Letters of recommendation & case presentation",
@@ -23,7 +23,8 @@ export function ServiceSection() {
     {
       icon: Home,
       title: "Housing & Relocation",
-      description: "Navigate homeownership or rentals in the U.S.",
+      description:
+        "Navigating homeownership or relocation in the U.S.? We make it seamless by providing the following services",
       features: [
         "Mortgage & financing for high-skilled professionals",
         "Understanding lease agreements & home loans",
@@ -34,7 +35,7 @@ export function ServiceSection() {
       icon: Calculator,
       title: "Tax Filing Made Simple",
       description:
-        "Navigate U.S. taxes confidently with our expert guidance and support.",
+        "Don't let U.S. tax laws confuse you. We ensure your tax filing is stress-free & compliant with the right deductions.",
       features: [
         "Avoid IRS penalties & double taxation",
         "Tax filing for EB-1A & Green Cards",
@@ -56,7 +57,7 @@ export function ServiceSection() {
       icon: GraduationCap,
       title: "Media Services",
       description:
-        "Build your professional presence with strategic media placements and expert insights.",
+        "Boost your professional presence with strategic media placements and expert articles.",
       features: [
         "Personal branding through high-tier publications",
         "Thought leadership to showcase your expertise",
@@ -68,7 +69,7 @@ export function ServiceSection() {
   return (
     <section className="py-16 max-w-7xl mx-auto px-4">
       <h2 className="text-2xl font-bold text-center mb-12">
-        Assistance We Offer
+        Services We Provide
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (

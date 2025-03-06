@@ -8,7 +8,7 @@ export function StatsSection() {
     { number: "20%", description: "Savings on tax filing for our clients" },
     {
       number: "1,000+",
-      description: "Visa holders transitioned jobs without status slip",
+      description: "Visa holders transitioned jobs without status risk",
     },
     { number: "Top 10", description: "Immigration law firms partner with us" },
   ];
@@ -34,7 +34,7 @@ export function StatsSection() {
           />
         </div>
         <div className="text-3xl font-light my-4 mx-auto max-w-fit">
-          Immigrants satisfied with our services since 2018.
+          Immigrants satisfied since 2018.
         </div>
       </div>
       <div className="md:mx-50 px-4">
