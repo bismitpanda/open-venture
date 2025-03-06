@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Navbar() {
   const navItems = [
@@ -12,8 +13,13 @@ export function Navbar() {
 
   return (
     <header className="flex justify-between items-center mt-4 p-4 max-w-7xl mx-auto">
-      <div className="flex items-center">
-        <img src="/logo.svg" alt="Open Venture" className="h-8" />
+      <div className="flex items-center h-8">
+        <Image
+          src="/logo-extended.png"
+          alt="Open Venture"
+          height={44}
+          width={225}
+        />
       </div>
       <nav className="hidden md:flex space-x-6">
         {navItems.map((item) => (

@@ -8,7 +8,12 @@ export function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 flex flex-col gap-2 md:mb-0">
-            <Image width={32} height={32} src="/logo.png" alt="Open Venture" />
+            <Image
+              width={200}
+              height={32}
+              src="/logo-extended.png"
+              alt="Open Venture"
+            />
             <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-left">
               3100 Mowry Ave, Fremont, CA 94538
             </span>

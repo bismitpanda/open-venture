@@ -18,7 +18,7 @@ export function TestimonialCard({
 }: TestimonialProps) {
   return (
     <Card className="min-w-[300px] mx-4">
-      <CardContent className="pt-6">
+      <CardContent>
         <div className="flex mb-2">
           {[...Array(rating)].map((_, i) => (
             <span key={i} className="text-yellow-400">
