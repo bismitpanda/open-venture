@@ -17,7 +17,7 @@ export function StatsSection() {
     <section id="services" className="bg-blue-50 py-16">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-row max-w-fit mx-auto space-x-10">
-          <span className="text-5xl font-bold bg-gradient-to-br from-[#1454A1] to-[#AC049B] text-transparent bg-clip-text">
+          <span className="text-5xl font-bold bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
             10,000+
           </span>
           <AvatarStack
