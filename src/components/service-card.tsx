@@ -19,8 +19,10 @@ export function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Card className="p-6 shadow-none">
-      <Icon className="w-6 h-6" />
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <div className="flex flex-row space-x-4 text-blue-900">
+        <Icon className="w-6 h-6" />
+        <h3 className="text-xl font-bold mb-2">{title}</h3>
+      </div>
       <p className="text-gray-600 mb-4">{description}</p>
       <ul className="space-y-2">
         {features.map((feature, i) => (

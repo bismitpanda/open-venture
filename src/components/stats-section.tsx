@@ -38,7 +38,7 @@ export function StatsSection() {
         </div>
       </div>
       <div className="md:mx-50 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={index}>
               <div className="md:hidden">
@@ -48,7 +48,7 @@ export function StatsSection() {
                 <p className="text-sm text-gray-600">{stat.description}</p>
               </div>
               <div className="hidden md:block bg-white p-8 rounded-xl shadow-xl h-full">
-                <div className="text-5xl font-bold">{stat.number}</div>
+                <div className="text-4xl font-bold">{stat.number}</div>
                 <p className="mt-8 text-lg text-gray-600">{stat.description}</p>
               </div>
             </div>
