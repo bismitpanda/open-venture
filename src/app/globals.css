@@ -13,6 +13,15 @@
   --color-foreground: var(--foreground);
 }
 
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-mono: var(--font-geist-mono), ui-monospace, Menlo, Monaco,
+    "Segoe UI Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Consolas", "Courier New", monospace;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
