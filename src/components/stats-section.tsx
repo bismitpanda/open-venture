@@ -34,7 +34,7 @@ export function StatsSection() {
           />
         </div>
         <div className="text-3xl font-light my-4 mx-auto max-w-fit">
-          Immigrants satisfied since 2018.
+          Immigrants satisfied since 2019
         </div>
       </div>
       <div className="md:mx-50 px-4">
