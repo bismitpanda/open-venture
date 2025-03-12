@@ -13,29 +13,29 @@ export function ServiceSection() {
       icon: CreditCard,
       title: "Visas & Green Card",
       description:
-        "Leverage our expertise to secure a fast-track O1 work visa and an EB1A Green Card",
+        "Secure you fast-track O-1 work visa or EB-1A Green Card with our expert guidance",
       features: [
-        "Profile building to fill gaps in your qualifications",
+        "Profile building to fill qualification gaps",
         "Work with Tier 1 law firms",
-        "No annual caps, lottery or employer sponsorship required",
+        "No annual caps, lottery, or employer sponsorship required",
       ],
     },
     {
       icon: Home,
       title: "Housing & Relocation",
       description:
-        "Navigating homeownership or relocation in the U.S.? We make it seamless by providing the following services",
+        "We make your move to the U.S. seamless with end-to-end support",
       features: [
-        "Mortgage & financing for high-skilled professionals",
-        "Understanding lease agreements & home loans",
-        "Relocation support for job changes",
+        "Roommate matching and lease guidance",
+        "U.S. bank accounts, credit cards, and SIM card activation",
+        "Deposit assitance (pay in India)",
       ],
     },
     {
       icon: Calculator,
       title: "Tax Filing Made Simple",
       description:
-        "Don't let U.S. tax laws confuse you. We ensure your tax filing is stress-free & compliant with the right deductions.",
+        "U.S. tax laws can be complex—we make filing stress-free and compliant",
       features: [
         "Avoid IRS penalties & double taxation",
         "Tax filing for EB-1A & Green Cards",

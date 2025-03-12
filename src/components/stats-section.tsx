@@ -13,7 +13,7 @@ export function StatsSection() {
   return (
     <section id="services" className="bg-blue-50 py-16">
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex flex-row max-w-fit mx-auto space-x-10">
+        <div className="flex flex-row max-w-fit mx-auto space-x-4 md:space-x-10">
           <span className="text-5xl font-bold bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
             10,000+
           </span>
