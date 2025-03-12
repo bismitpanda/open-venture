@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Navbar() {
   const navItems = [
@@ -32,7 +33,9 @@ export function Navbar() {
           </a>
         ))}
       </nav>
-      <Button>Get in Touch</Button>
+      <Link href="https://calendly.com/greencardinc-nikin/30min">
+        <Button>Get in Touch</Button>
+      </Link>
     </header>
   );
 }

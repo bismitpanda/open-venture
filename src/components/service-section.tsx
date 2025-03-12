@@ -19,6 +19,9 @@ export function ServiceSection() {
         "Work with Tier 1 law firms",
         "No annual caps, lottery, or employer sponsorship required",
       ],
+      cta: "Schedule a Free Consultation",
+      calendlyLink:
+        "https://calendly.com/greencardinc/immigration-support-30min",
     },
     {
       icon: Home,
@@ -30,6 +33,8 @@ export function ServiceSection() {
         "U.S. bank accounts, credit cards, and SIM card activation",
         "Deposit assitance (pay in India)",
       ],
+      cta: "Connect on WhatsApp",
+      calendlyLink: "https://wa.me/18573813062",
     },
     {
       icon: Calculator,
@@ -38,31 +43,38 @@ export function ServiceSection() {
         "U.S. tax laws can be complex—we make filing stress-free and compliant",
       features: [
         "Avoid IRS penalties & double taxation",
-        "Tax filing for EB-1A & Green Cards",
-        "ITIN, Social Security, and investment tax guidance",
+        "Expert tax filing for J-1, F-1, H-1B, and O-1",
+        "ITIN applications and U.S. investment taxation",
       ],
+      cta: "Schedule a Free Tax Consultation",
+      calendlyLink:
+        "https://www.opentaxadvisors.com/booking-calendar/complimentary-consultation?timezone=America%2FNew_York&referral=service_details_widget",
     },
     {
       icon: Building2,
       title: "Incubator & Business Support",
       description:
-        "Starting a business in the U.S.? We connect you to the right incubators, funding, and legal setup.",
+        "Turn your idea into a U.S. startup with our comprehensive support",
       features: [
-        "Business visa & LLC setup help",
-        "Startup incubator & networking access",
-        "Funding & investment opportunities",
+        "Technical support to build your 0 to 1 prototype",
+        "O-1 work visas for your team",
+        "Incorporation, office space, and accounting",
       ],
+      cta: "Talk to a Business Expert",
+      calendlyLink: "https://calendly.com/greencardinc-nikin/30min",
     },
     {
       icon: GraduationCap,
       title: "Media Services",
       description:
-        "Boost your professional presence with strategic media placements and expert articles.",
+        "Boost your professional and startup brand with strategic media placements",
       features: [
-        "Personal branding through high-tier publications",
-        "Thought leadership to showcase your expertise",
-        "Strengthen your case for EB-1A & career growth",
+        "Get featured in top-tier publications",
+        "Establish thought leadership in your industry",
+        "Strengthen your O-1 / EB-1A case, startup and career",
       ],
+      cta: "Book a Strategy Call",
+      calendlyLink: "https://calendly.com/greencardinc-nikin/30min",
     },
   ];
 

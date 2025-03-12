@@ -9,6 +9,8 @@ export interface ServiceCardProps {
   title: string;
   description: string;
   features: string[];
+  cta: string;
+  calendlyLink: string;
 }
 
 export function ServiceCard({
@@ -16,9 +18,11 @@ export function ServiceCard({
   title,
   description,
   features,
+  cta,
+  calendlyLink,
 }: ServiceCardProps) {
   return (
-    <Card className="p-6 shadow-none">
+    <Card className="p-6 shadow-none justify-between">
       <div className="flex flex-row space-x-4 text-blue-900">
         <Icon className="w-6 h-6" />
         <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -34,9 +38,9 @@ export function ServiceCard({
           </li>
         ))}
       </ul>
-      <Link href="#">
+      <Link href={calendlyLink}>
         <Button variant="link" className="group mt-4 gap-2 hover:no-underline">
-          Know More
+          {cta}
           <ArrowRight className="transform transition-transform duration-200 ease-in-out group-hover:translate-x-1" />
         </Button>
       </Link>

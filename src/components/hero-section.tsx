@@ -16,7 +16,7 @@ export function HeroSection() {
         seamless so you can focus on what matters.
       </p>
       <div className="flex justify-center gap-4 sm:flex-row flex-col">
-        <Link href="">
+        <Link href="https://calendly.com/greencardinc-nikin/30min">
           <Button className="p-5" variant="default">
             Book a free consultation
           </Button>
