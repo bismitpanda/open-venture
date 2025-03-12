@@ -33,7 +33,7 @@ export function StatsSection() {
             className="items-center"
           />
         </div>
-        <div className="text-3xl font-light my-4 mx-auto max-w-fit">
+        <div className="text-3xl font-light my-4 mx-auto max-w-fit text-center">
           Immigrants satisfied since 2019
         </div>
       </div>
