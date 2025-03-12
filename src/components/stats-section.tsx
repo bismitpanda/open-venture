@@ -4,13 +4,10 @@ import { AvatarStack } from "@/components/avatar-stack";
 
 export function StatsSection() {
   const stats = [
-    { number: "2,000+", description: "Successfully secured Green Cards" },
-    { number: "20%", description: "Savings on tax filing for our clients" },
-    {
-      number: "1,000+",
-      description: "Visa holders transitioned jobs without status risk",
-    },
-    { number: "Top 10", description: "Immigration law firms partner with us" },
+    { number: "100+", description: "O-1 and EB-1A approvals secured" },
+    { number: "2,000+", description: "People assisted with housing each year" },
+    { number: "$5M+", description: "Facilitated in tax refunds" },
+    { number: "10+", description: "Businesses launched through our support" },
   ];
 
   return (

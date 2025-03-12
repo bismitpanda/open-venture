@@ -13,11 +13,11 @@ export function ServiceSection() {
       icon: CreditCard,
       title: "Visas & Green Card",
       description:
-        "Fast-Track Your EB-1A Green Card Process Leverage our expertise to navigate your EB-1A journey successfully.",
+        "Leverage our expertise to secure a fast-track O1 work visa and an EB1A Green Card",
       features: [
-        "EB-1A petition & documentation strategy",
-        "Letters of recommendation & case presentation",
-        "Spouse & dependent support",
+        "Profile building to fill gaps in your qualifications",
+        "Work with Tier 1 law firms",
+        "No annual caps, lottery or employer sponsorship required",
       ],
     },
     {
