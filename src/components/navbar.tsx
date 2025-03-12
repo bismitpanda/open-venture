@@ -5,11 +5,23 @@ import Link from "next/link";
 
 export function Navbar() {
   const navItems = [
-    { label: "Visa Assistance", href: "#" },
-    { label: "Housing", href: "#" },
-    { label: "Tax Filing", href: "#" },
-    { label: "Incubator", href: "#" },
-    { label: "Media Services", href: "#" },
+    {
+      label: "Visa Assistance",
+      href: "https://calendly.com/greencardinc/immigration-support-30min",
+    },
+    { label: "Housing", href: "https://wa.me/18573813062" },
+    {
+      label: "Tax Filing",
+      href: "https://www.opentaxadvisors.com/booking-calendar/complimentary-consultation?timezone=America%2FNew_York&referral=service_details_widget",
+    },
+    {
+      label: "Incubator",
+      href: "https://calendly.com/greencardinc-nikin/30min",
+    },
+    {
+      label: "Media Services",
+      href: "https://calendly.com/greencardinc-nikin/30min",
+    },
   ];
 
   return (
