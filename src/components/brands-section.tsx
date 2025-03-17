@@ -20,8 +20,8 @@ export function PartnerSection() {
               <Image
                 src={`/brands/${brand.toLowerCase()}.jpg`}
                 alt={brand}
-                height={180}
-                width={480}
+                height={240}
+                width={600}
               />
             </div>
           ))}
